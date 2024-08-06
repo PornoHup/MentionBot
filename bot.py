@@ -21,7 +21,7 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**I'm MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more information__\n\n Follow [@ALBINPRAVEEN](https://github.com/ALBINPRAVEEN) on Github",
+    "__**Mən N A Z R Y N Tagger Bot**, 𝐁𝐨𝐭 𝐇𝐚𝐪𝐪𝐢𝐧𝐝𝐚 𝐌ə𝐥𝐮𝐦𝐚𝐭 𝐀𝐥𝐦𝐚𝐪 𝐔𝐜𝐮𝐧 👻\nClick **/help** Əmrinə vurun\n\n Əlaqə [Tural](https://t.me/hmnevar) online Telegram",
     link_preview=False,
     buttons=(
       [
@@ -33,19 +33,19 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [@ALBINPRAVEEN](https://github.com/ALBINPRAVEEN) on Github"
+  helptext = "**Yardım Menüsu of N A Z R Y NTagBot**\n\nCommand: /tag\n__You can use this command with text what you want to mention others.__\n`Example: /tag Sabahınız xeyir!`\n__𝐁𝐨𝐭 𝐇𝐚𝐪𝐪𝐢𝐧𝐝𝐚 𝐌ə𝐥𝐮𝐦𝐚𝐭 𝐀𝐥𝐦𝐚𝐪 𝐔𝐜𝐮𝐧 messsage__.\n\əlaqə [Tural](https://github.com/t.me/hmnevar) online Telegram"
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Group', 'https://t.me/musicwithalby'),
-        Button.url('📦 Developer', 'https://albinpraveen.ml')
+        Button.url('📣 Kanal', 'https://t.me/Nezrinlogo'),
+        Button.url('📦 Founder', 'https://t.me/hmnevar')
       ]
     )
   )
   
-@client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
+@client.on(events.NewMessage(pattern="^/tag ?(.*)"))
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
