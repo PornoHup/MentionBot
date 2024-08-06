@@ -25,8 +25,8 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Group', 'https://t.me/musicwithalby'),
-        Button.url('📦 Developer', 'https://albinpraveen.ml')
+        Button.url('📣 Kanal', 'https://t.me/NezrinLogo'),
+        Button.url('📦 Founder', 'https://t.me/HmNeVar')
       ]
     )
   )
